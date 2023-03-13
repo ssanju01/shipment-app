@@ -1,0 +1,42 @@
+<h2>Albert Einstein</h2>
+
+<div class="row">
+  <div class="col-12">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="length" id="inlineRadio1" value="s" (ngModelChange)="lengthChanged()">
+      <label class="form-check-label" for="inlineRadio1">Short</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="length" id="inlineRadio2" value="m" (ngModelChange)="lengthChanged()">
+      <label class="form-check-label" for="inlineRadio2">Medium</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" [(ngModel)]="length" id="inlineRadio3" value="l" (ngModelChange)="lengthChanged()">
+      <label class="form-check-label" for="inlineRadio3">Long</label>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-1">
+  <div class="col-12 table-responsive">
+    <table class="table table-bordered table-hover table-striped" aria-describedby="Quotes">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Content</th>
+          <th>Length</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="quotes && quotes.length">
+          <tr *ngFor="let item of quotes">
+            <td>{{ item.dateAdded }}</td>
+            <td>{{ item.content }}</td>
+            <td>{{ item.length }}</td>
+          </tr>
+        </ng-container>
+
+      </tbody>
+    </table>
+  </div>
+</div>

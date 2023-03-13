@@ -1,0 +1,21 @@
+<h2>Shippers List</h2>
+
+<div class="row mt-1">
+  <div class="col-12 table-responsive">
+    <table class="table table-bordered table-hover table-striped" aria-describedby="Quotes">
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="shippers && shippers.length">
+          <tr *ngFor="let item of shippers">
+            <td class="cursor-pointer" (click)="gotoDetailPage(item.shipperId)">{{ item.shipperName }}</td>
+          </tr>
+        </ng-container>
+
+      </tbody>
+    </table>
+  </div>
+</div>

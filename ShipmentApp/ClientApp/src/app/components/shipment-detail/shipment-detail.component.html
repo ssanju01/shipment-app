@@ -1,0 +1,30 @@
+<h2>{{ shipperName }}</h2>
+
+<div class="row mt-1">
+  <div class="col-12 table-responsive">
+    <table class="table table-bordered table-hover table-striped" aria-describedby="Shipper Shipments">
+      <thead>
+        <tr>
+          <th>Shipper</th>
+          <th>Carrier</th>
+          <th>Description</th>
+          <th>Weight</th>
+          <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="shipments && shipments.length">
+          <tr *ngFor="let item of shipments">
+            <td>{{ item.shipper_name }}</td>
+            <td>{{ item.carrier_name }}</td>
+            <td>{{ item.shipment_description }}</td>
+            <td>{{ item.shipment_weight }}</td>
+            <td>{{ item.shipment_rate_description }}</td>
+          </tr>
+        </ng-container>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+

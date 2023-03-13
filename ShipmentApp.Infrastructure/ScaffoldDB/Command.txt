@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext -Connection "Server=USMAN;Database=ShipmentDB;Trusted_Connection=True;TrustServerCertificate=True" -Provider Microsoft.EntityFrameworkCore.SqlServer -context ShipmentContext -Project ShipmentApp.Infrastructure -ContextDir Context -OutputDir Entities -force -NoOnConfiguring
