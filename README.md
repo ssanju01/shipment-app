@@ -35,16 +35,3 @@ We are using following ORMS:
 You will find the store procedure script under folder Infrastructure -> .Scripts`
 - [ShippmentApp.Infrastructure] - Scripts
 
-## Plugins
-
-There is no plugins used except bootstrap on frontend.
-
-| Plugin | README |
-| ------ | ------ |
-| Boostrap | [https://getbootstrap.com/][PlDb] |
-
-## License
-
-Uxmaan
-
-**Free, Yeah!**
